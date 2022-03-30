@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <h1>Squiggle</h1>
+          <h3>Estimation language</h3>
+          <p>Sam Nolan</p>
+        </section>
+        <section>
+          <h3>Who the heck is this guy?</h3>
+          <img src="./images/SamNolan.jpg" width="300" style="float: left;">
+          <p><b>Sam Nolan</b> - Unemployed nobody</p>
+          <p>Doesn't actually work for but has aligned interests with QURI</p>
+        </section>
+				<section>
+          <section>
+          <h3>What's the problem?</h3>
+          <p>Google sheets falls short for representing models of importance</p>
+          </section>
+          <section>
+            <h5>Accessibility</h5>
+            <p><a href="https://docs.google.com/spreadsheets/d/1B1fODKVbnGP4fejsZCVNvBm5zvI1jC7DhkaJpFk6zfo/edit#gid=1680005064">GiveDirectly CEA</a></p>
+            <ul>
+              <li>Difficult Referencing</li>
+              <li>Difficult to add context</li>
+              <li>Difficult for figures and links</li>
+              <li>No forms of abstraction</li>
+            </ul>
+          </section>
+          <section>
+            <h5>Uncertainty</h5>
+            <ul>
+              <li>Uncertainty for <a href="https://www.amazon.com/Flaw-Averages-Underestimate-Risk-Uncertainty/dp/1118073754">better math</a></li>
+              <li>Uncertainty for better conversation</li>
+              <li>Uncertainty for <a href="https://en.wikipedia.org/wiki/Value_of_information">VOI</a></li>
+              <li>Uncertainty for scoring</li>
+            </ul>
+          </section>
+          <section>
+            <h5>Validity</h5>
+            <ul>
+              <li>Unchecked, could be prone to error</li>
+              <li><a href="https://forum.effectivealtruism.org/posts/WmQwtYEajNDuPdyZx/type-checking-givewell-s-givedirectly-cost-effective">Dimensional violations</a></li>
+              <li>Mathematical errors (e.g. You can't add percentages)</li>
+              <li>Model and semantic errors (e.g. <a href="https://forum.effectivealtruism.org/posts/xue4yQ5rn6iDsHdmM/pedant-a-type-checker-for-cost-effectiveness-analysis">Years being double counted, see footnote 1</a>))</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+          <h3>Squiggle!</h3>
+          <p>Estimation language for:</p>
+          <ul>
+            <li>Cost Effectiveness Analysis</li>
+            <li>Forecasting</li>
+            <li>Other variables of interest</li>
+          </ul>
+        </section>
+        </section>
+        <section>
+          <h3><a href="https://playground.squiggle-language.com/">Playground Demo</a></h3>
+          <h3><a href="https://www.squiggle-language.com/docs/Functions">Distribution showcase</a></h3>
+        </section>
+        <section>
+          <h3>Example notebooks</h3>
+          <ul>
+            <li><a href="https://observablehq.com/@hazelfire/givewells-givedirectly-cost-effectiveness-analysis">GiveDirectly</a></li>
+            <li><a href="https://observablehq.com/@hazelfire/referencing-other-notebooks">Referencing other notebooks</a></li>
+            <li><a href="https://observablehq.com/@hazelfire/nuclear-risk-forecasts">Nuclear Risk Forecasts</a></li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <h3>The Future</h3>
+            <p>(Other than getting to stable alpha)</p>
+          </section>
+          <section>
+            <h3>Pedant - Squiggle with Types</h3>
+            <p><a href="https://forum.effectivealtruism.org/posts/xue4yQ5rn6iDsHdmM/pedant-a-type-checker-for-cost-effectiveness-analysis">My post on this</a></p>
+          </section>
+          <section>
+            <h3>Writing more in Squiggle!</h3>
+          </section>
+        </section>
+        <section>
+          <h3>Questions and Contact</h3>
+        </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
